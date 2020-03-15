@@ -1,0 +1,107 @@
+This is instructions for updating Raspberry Pi Smartnode to Divi Daemon 1.0.8 
+**This is a tutorial for updating those who used the Smartnode Image as described in the Github tutorial and my videos,
+if you did your own install you can modify the directions and use it too** All instructions are at users own risk I
+
+On your desktop you aleady have divi-1.0.4, once done and confirmed 1.0.8 is running you can delete
+1.0.4 folder
+
+Steps
+
+1. Open terminal
+
+2. copy and enter this in terminal (hit enter)
+```wget https://github.com/DiviProject/Divi/releases/download/v1.0.8/divi-1.0.8-RPi2.tar.gz```
+
+it will download 1.0.8 Arm Build for Raspberry Pi
+
+
+3.Copy and enter this in terminal (hit enter)
+```tar -xzvf divi-1.0.8-RPi2.tar.gz --directory /home/pi/Desktop```
+
+This will extract the new divi-1.0.8 directory to your Pi's Deskop.
+
+
+4a. For Smart Node Version 1
+Copy and enter this in terminal 
+
+```dli stop```
+
+(hit enter key)
+
+wait about 5 - 15 second and you should see the words "DIVI Server Stopping"
+
+4b. For Smart Node Version 2
+Copy and enter this in terminal 
+
+```diviservicestop```
+
+(hit enter key)
+
+After a few moments it will drop you to a command prompt
+
+5. Copy and enter this in terminal
+
+```dli getinfo```
+
+We want to make sure that Divi is not running you should see something like "error: couldn't connect to server" This is good!
+
+6. Open your File Manager (3rd Icon on the top of your screen, looks like two folders)
+
+7. You should now be in your /home/pi directory if not follow the folder tree to your /home/pi directory
+
+8. In your /home/pi directory we will rename two files 
+
+A. Locate .bash_aliases and right click on it and rename
+```.bash_aliases to .bash_aliases_backup```
+
+B. Locate divi-startup.sh and right click on it and rename
+```divi-startup.sh to divi-startup.sh-backup```
+
+9. Import the two new files attached into the same directory /home/pi
+When done you will see in /home/pi 
+```.bash_aliases
+.bash_aliases_backup
+divi-startup.sh
+divi-startup.sh-backup```
+
+10. Close File Manager window
+
+11 Go back to terminal
+
+12. Copy and enter this in terminal
+```reload```
+(hit enter key)
+
+13a.For Smart Node Version 1
+Copy and enter this in terminal (hit enter)
+
+```divistart```
+
+(hit enter key)
+
+13b.For Smart Node Version 2
+
+```diviservicestart```
+
+(hit enter key)
+
+14. Wait about 60 seconds then in terminal enter this 
+
+dli getinfo
+
+(hit enter key)
+
+If it returns Error 28 the pi is still getting started (wait a few minutes)
+
+when getinfo returns 
+
+```"version" : "1.0.8.0"```
+
+At the top you now know all is working well.
+
+Options: If your wallet is encrypted and you are staking make sure you re-unlock for staking again.
+
+```dli walletpassphrase password 0 true```
+
+
+
