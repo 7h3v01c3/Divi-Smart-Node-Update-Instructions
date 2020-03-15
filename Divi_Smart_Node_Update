@@ -1,8 +1,9 @@
+TheVoice Github Upate Divi Smart Node
 
-This is instructions for updating Raspberry Pi Smartnode to Divi Daemon 1.0.8 
+This is instructions for updating Raspberry Pi Divi Smart Node to Divi Daemon 1.0.8 
 
-This is a tutorial for updating those who used the Divi Smartnode Image as described in the Divi Project Github tutorial and my videos.
-If you did a manual install not using the Divi Smartnode Image you can modify the directions and use it too. 
+This is a tutorial for updating those who used the Divi Smart Node Image as described in the Github tutorial and my videos.
+If you did a manual install not using the Divi Smart Node Image you can modify the directions and use it too. 
 
 All instructions are at users' own risk!
 
@@ -61,7 +62,17 @@ A. Locate .bash_aliases and right click on it and rename
 B. Locate divi-startup.sh and right-click on it and rename
 divi-startup.sh to divi-startup.sh-backup
 
-9. Import the two new files attached into the same directory /home/pi
+9. Import the the correct bash_aliases update file into the same directory /home/pi
+    A. .bash_aliases_v1 is for Version 1 of Smart Node, after import rename to .bash_aliases
+    B. .bash_aliases_v2 is for Version 2 of Smart Node, after import rename to .bash_aliases
+
+Identify Versions
+    To tell which version of Divi Smartnode you are running. Open your .bash_aliases_backup in textedit
+    Identify Versions by reading the first line of text.
+    Version 1 reads              alias aliasfile="sudo nano ~/.bash_aliases"
+    Version 2 reads              # System
+
+
 When done you will see in /home/pi 
 .bash_aliases
 .bash_aliases_backup

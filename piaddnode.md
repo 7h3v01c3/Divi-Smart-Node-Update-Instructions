@@ -1,5 +1,12 @@
 1. stop divi 
-```diviservicestop```
+    1a Version 1 Divi Smart Node
+
+    ```dli stop```
+
+    1b Version 2 Divi Smart node
+
+    ```diviservicestop```
+
 (hit enter)
 
 2. clean .divi directory
@@ -51,5 +58,12 @@ when done you will have these four items in .divi
 4. close file explorer window 
 
 5. open terminal start divi
-```diviservicestart```
+    5a Version 1 Divi Smart Node
+
+    ```divistart```
+    
+    5b Version 2 Divi Smart node
+
+    ```diviservicestop```
+
 (hit enter)

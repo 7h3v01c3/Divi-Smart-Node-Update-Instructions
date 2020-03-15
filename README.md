@@ -10,3 +10,10 @@ divi-startup.sh & .bash_aliases
 
 
 Please visit with use in Telegram or Discord for any questions
+
+The two community members who helped with setup of this tutorial where
+
+Tamedog and Patriciusss(♣️)
+
+
+Please thank them for their help on this project

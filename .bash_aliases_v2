@@ -1,0 +1,20 @@
+# System
+alias aliasfile="sudo nano ~/.bash_aliases"
+alias aliasreload="source ~/.bash_aliases"
+alias sweep="cat /dev/null > ~/.bash_history && history -c && exit"
+
+# Divi
+alias init-divi-conf="mv ~/divisetup-complete.sh ~/divisetup-run.sh"
+alias dli="~/Desktop/divi-1.0.8/bin/./divi-cli"
+alias dividebug="sudo tail -f ~/.divi/debug.log"
+alias divistart="~/Desktop/divi-1.0.8/bin/./divid"
+alias diviservicestart="sudo systemctl start divid"
+alias diviservicestop="sudo systemctl stop divid"
+alias diviservicestatus="sudo systemctl status divid"
+alias dividir="cd ~/Desktop/divi-1.0.8/bin"
+alias datadir="cd ~/.divi"
+alias diviuserdelete="sudo rm -rf ~/.divi/backups ~/.divi/divi.conf ~/.divi/masternode.conf ~/.divi/mnpayments.dat ~/.divi/wallet.dat" 
+alias diviclearcache="sudo rm -rf ~/.divi/blocks ~/.divi/chainstate ~/.divi/database ~/.divi/zerocoin ~/.divi/.lock ~/.divi/db.log ~/.divi/debug.log ~/.divi/fee_estimates.dat ~/.divi/mncache.dat ~/.divi/netfulfilled.dat ~/.divi/peers.dat ~/.divi/sporks"
+alias divirefresh="~/Desktop/divi-1.0.8/bin/./divid -reindex"
+alias divirescan="~/Desktop/divi-1.0.8/bin/./divid -rescan" 
+#changed to 1.0.8
