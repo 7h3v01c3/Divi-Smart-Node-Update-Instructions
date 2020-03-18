@@ -4,7 +4,7 @@
 
 2. clean .divi directory
     keep keep only
-```    a. blocks(folder)
+``` a. blocks(folder)
     b. wallet.dat
     c. masternode.dat
     d. divi.conf ```
