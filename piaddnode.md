@@ -5,10 +5,10 @@
 2. clean .divi directory
     keep keep only
 ```
-    a. blocks(folder)
-    b. wallet.dat
-    c. masternode.dat
-    d. divi.conf
+	a. blocks(folder)
+	b. wallet.dat
+	c. masternode.dat
+	d. divi.conf
 ```
 3. open divi.conf in textedit
     a. remove all addnodes if any present
