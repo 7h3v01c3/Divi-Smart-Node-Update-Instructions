@@ -1,3 +1,4 @@
+#changed to 1.0.8
 # System
 alias aliasfile="sudo nano ~/.bash_aliases"
 alias aliasreload="source ~/.bash_aliases"
@@ -16,5 +17,4 @@ alias datadir="cd ~/.divi"
 alias diviuserdelete="sudo rm -rf ~/.divi/backups ~/.divi/divi.conf ~/.divi/masternode.conf ~/.divi/mnpayments.dat ~/.divi/wallet.dat" 
 alias diviclearcache="sudo rm -rf ~/.divi/blocks ~/.divi/chainstate ~/.divi/database ~/.divi/zerocoin ~/.divi/.lock ~/.divi/db.log ~/.divi/debug.log ~/.divi/fee_estimates.dat ~/.divi/mncache.dat ~/.divi/netfulfilled.dat ~/.divi/peers.dat ~/.divi/sporks"
 alias divirefresh="~/Desktop/divi-1.0.8/bin/./divid -reindex"
-alias divirescan="~/Desktop/divi-1.0.8/bin/./divid -rescan" 
-#changed to 1.0.8
+alias divirescan="~/Desktop/divi-1.0.8/bin/./divid -rescan"
