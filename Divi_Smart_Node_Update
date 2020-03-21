@@ -1,11 +1,11 @@
-TheVoice Github Upate Divi Smart Node
+TheVoice Github Upate Divi Smart Node (Pitch in and make some suggestions or post in issues)
 
 This is instructions for updating Raspberry Pi Divi Smart Node to Divi Daemon 1.0.8 
 
 This is a tutorial for updating those who used the Divi Smart Node Image as described in the Github tutorial and my videos.
 If you did a manual install not using the Divi Smart Node Image you can modify the directions and use it too. 
 
-All instructions are at users' own risk!
+All instructions are at users' own risk
 
 On your desktop you already have divi-1.0.4, once done and confirmed 1.0.8 is running you can delete 1.0.4 folder
 
